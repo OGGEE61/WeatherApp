@@ -8,7 +8,7 @@ weather_data = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q=
 
 if weather_data['cod'] == '404':
     print('City not found')
-else
+else:
     weather = weather_data['weather'][0]['main']
     temp = round(weather_data['main']['temp']) 
 
